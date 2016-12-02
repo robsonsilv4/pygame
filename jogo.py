@@ -1,4 +1,5 @@
 import pygame
+from pygame.locals import *
 
 pygame.init()
 
@@ -7,7 +8,7 @@ pygame.display.set_caption('')
 
 while True:
     for evento in pygame.event.get():
-        if evento.type == pygame.QUIT:
+        if evento.type == QUIT:
             pygame.quit()
             
     pygame.display.update()
