@@ -17,6 +17,9 @@ pygame.display.set_caption('Jogo')
 
 tela.fill(azul_claro)
 
+um_pixel = pygame.PixelArray(tela)
+um_pixel[3][3] = preto
+
 while True:
     for evento in pygame.event.get():
         print(evento)
