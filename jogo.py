@@ -26,6 +26,8 @@ pygame.draw.circle(tela, vermelho, (50, 50), 20)
 
 pygame.draw.circle(tela, vermelho, (100, 100), 20, 1)
 
+pygame.draw.rect(tela, roxo, (100, 100, 200, 100))
+
 while True:
     for evento in pygame.event.get():
         print(evento)
