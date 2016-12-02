@@ -3,6 +3,15 @@ from pygame.locals import *
 
 pygame.init()
 
+preto = (0, 0, 0)
+branco = (255, 255, 255)
+verde = (0, 255, 0)
+vermelho = (255, 0, 0)
+amarelo = (255, 255, 0)
+azul = (0, 0, 255)
+azul_claro = (0, 255, 255)
+roxo = (255, 0, 255)
+
 tela = pygame.display.set_mode((800, 600))
 pygame.display.set_caption('Jogo')
 
