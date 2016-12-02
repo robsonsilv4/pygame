@@ -11,5 +11,6 @@ while True:
         print(evento)
         if evento.type == QUIT:
             pygame.quit()
+            quit()
             
     pygame.display.update()
