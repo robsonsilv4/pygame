@@ -20,6 +20,8 @@ tela.fill(azul_claro)
 um_pixel = pygame.PixelArray(tela)
 um_pixel[3][3] = preto
 
+pygame.draw.line(tela, azul, (389, 200), (300, 70), 4)
+
 while True:
     for evento in pygame.event.get():
         print(evento)
