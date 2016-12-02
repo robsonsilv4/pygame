@@ -12,7 +12,7 @@ azul = (0, 0, 255)
 azul_claro = (0, 255, 255)
 roxo = (255, 0, 255)
 
-tela = pygame.display.set_mode((800, 600))
+tela = pygame.display.set_mode((400, 300))
 pygame.display.set_caption('Jogo')
 
 while True:
