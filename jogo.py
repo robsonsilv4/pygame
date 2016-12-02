@@ -15,6 +15,8 @@ roxo = (255, 0, 255)
 tela = pygame.display.set_mode((400, 300))
 pygame.display.set_caption('Jogo')
 
+tela.fill(azul_claro)
+
 while True:
     for evento in pygame.event.get():
         print(evento)
