@@ -22,6 +22,8 @@ um_pixel[3][3] = preto
 
 pygame.draw.line(tela, azul, (389, 200), (300, 70), 4)
 
+pygame.draw.circle(tela, vermelho, (50, 50), 20)
+
 while True:
     for evento in pygame.event.get():
         print(evento)
