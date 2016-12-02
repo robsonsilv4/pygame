@@ -8,6 +8,7 @@ pygame.display.set_caption('')
 
 while True:
     for evento in pygame.event.get():
+        print(evento)
         if evento.type == QUIT:
             pygame.quit()
             
