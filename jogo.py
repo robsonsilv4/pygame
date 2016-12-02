@@ -28,6 +28,8 @@ pygame.draw.circle(tela, vermelho, (100, 100), 20, 1)
 
 pygame.draw.rect(tela, roxo, (100, 100, 200, 100))
 
+pygame.draw.polygon(tela, verde, ((50, 20),(30, 40),(60, 100), (200, 100), (3, 3)))
+
 while True:
     for evento in pygame.event.get():
         print(evento)
