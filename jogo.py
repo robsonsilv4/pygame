@@ -20,7 +20,7 @@ imagem = pygame.image.load('beyblade.png')
 imagem_x = 10
 imagem_y = 10
 
-velocidade = 5
+velocidade = 3
 movimento = 'baixo'
 
 fps = pygame.time.Clock()
@@ -63,4 +63,4 @@ while True:
             sys.exit()
             
     pygame.display.update()
-    fps.tick(150)
+    fps.tick(60)
