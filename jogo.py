@@ -16,20 +16,6 @@ roxo = (255, 0, 255)
 tela = pygame.display.set_mode((400, 300))
 pygame.display.set_caption('Jogo')
 
-tela.fill(azul_claro)
-
-um_pixel = pygame.PixelArray(tela)
-um_pixel[3][3] = preto
-
-pygame.draw.line(tela, azul, (389, 200), (300, 70), 4)
-
-pygame.draw.circle(tela, vermelho, (50, 50), 20)
-
-pygame.draw.circle(tela, vermelho, (100, 100), 20, 1)
-
-pygame.draw.rect(tela, roxo, (100, 100, 200, 100))
-
-pygame.draw.polygon(tela, verde, ((50, 20),(30, 40),(60, 100), (200, 100), (3, 3)))
 
 while True:
     for evento in pygame.event.get():
