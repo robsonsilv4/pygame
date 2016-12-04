@@ -53,9 +53,9 @@ while True:
         if imagem_x < 30:
             imagem = pygame.transform.rotate(imagem, 90)
             movimento = 'baixo'
-            
+    
+    tela.blit(imagem, (imagem_x, imagem_y))
     for evento in pygame.event.get():
-        tela.blit(imagem, (imagem_x, imagem_y))
         print(evento)
         if evento.type == QUIT:
             pygame.quit()
