@@ -16,6 +16,10 @@ roxo = (255, 0, 255)
 tela = pygame.display.set_mode((400, 300))
 pygame.display.set_caption('Jogo')
 
+imagem = pygame.image.load('beyblade.png')
+imagem_x = 10
+imagem_y = 10
+
 
 while True:
     for evento in pygame.event.get():
