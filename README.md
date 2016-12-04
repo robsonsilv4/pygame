@@ -1,6 +1,12 @@
 # pygame
 
 
+Qualquer erro no código me avisem ou façam um commit pois estou testando em um arquivo local e depois é que adiciono ao GitHub.
+
+
+Com isso pode haver erros neste código que não no local e vice-versa.
+
+
 Para instalar o Python no Arch, Manjaro e derivados:
 
 sudo pacman -Sy python
