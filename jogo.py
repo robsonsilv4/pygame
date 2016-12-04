@@ -23,6 +23,7 @@ imagem_y = 10
 
 while True:
     for evento in pygame.event.get():
+        tela.blit(imagem, (imagem_x, imagem_y))
         print(evento)
         if evento.type == QUIT:
             pygame.quit()
