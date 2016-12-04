@@ -13,7 +13,7 @@ azul = (0, 0, 255)
 azul_claro = (0, 255, 255)
 roxo = (255, 0, 255)
 
-tela = pygame.display.set_mode((400, 300))
+tela = pygame.display.set_mode((300, 300))
 pygame.display.set_caption('Jogo')
 
 imagem = pygame.image.load('beyblade.png')
