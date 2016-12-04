@@ -20,6 +20,8 @@ imagem = pygame.image.load('beyblade.png')
 imagem_x = 10
 imagem_y = 10
 
+fps = pygame.time.Clock()
+
 
 while True:
     for evento in pygame.event.get():
@@ -31,3 +33,4 @@ while True:
             sys.exit()
             
     pygame.display.update()
+    fps.tick(30)
