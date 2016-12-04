@@ -28,6 +28,8 @@ fps = pygame.time.Clock()
 
 while True:
     
+    tela.fill(preto)
+    
     if movimento == 'baixo':
         imagem_y += velocidade
         if imagem_y > 200:
