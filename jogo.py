@@ -20,10 +20,34 @@ imagem = pygame.image.load('beyblade.png')
 imagem_x = 10
 imagem_y = 10
 
+velocidade = 5
+movimento = 'baixo'
+
 fps = pygame.time.Clock()
 
 
 while True:
+    
+    if movimento == 'baixo':
+        imagem_y += velocidade
+        if imagem_y > 200:
+            movimento = 'direita'
+
+    elif movimento == 'direita':
+        imagem_x += velocidade
+        if imagem_x > 200:
+            movimento = 'cima'
+
+    elif movimento == 'cima':
+        imagem_y -= velocidade
+        if imagem_y < 30:
+            movimento = 'esquerda'
+
+    elif movimento == 'esquerda':
+        imagem_x -= velocidade
+        if imagem_x < 30:
+            movimento = 'baixo'
+            
     for evento in pygame.event.get():
         tela.blit(imagem, (imagem_x, imagem_y))
         print(evento)
