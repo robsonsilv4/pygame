@@ -31,21 +31,25 @@ while True:
     if movimento == 'baixo':
         imagem_y += velocidade
         if imagem_y > 200:
+            imagem = pygame.transform.rotate(imagem, 90)
             movimento = 'direita'
 
     elif movimento == 'direita':
         imagem_x += velocidade
         if imagem_x > 200:
+            imagem = pygame.transform.rotate(imagem, 90)
             movimento = 'cima'
 
     elif movimento == 'cima':
         imagem_y -= velocidade
         if imagem_y < 30:
+            imagem = pygame.transform.rotate(imagem, 90)
             movimento = 'esquerda'
 
     elif movimento == 'esquerda':
         imagem_x -= velocidade
         if imagem_x < 30:
+            imagem = pygame.transform.rotate(imagem, 90)
             movimento = 'baixo'
             
     for evento in pygame.event.get():
